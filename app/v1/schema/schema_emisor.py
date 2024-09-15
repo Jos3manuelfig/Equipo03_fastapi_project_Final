@@ -10,6 +10,7 @@ from datetime import datetime
 #     e_telf: str
 #     e_mail: Optional[str] = None
 
+
 class EmisorCreate(BaseModel):
     e_docu: str
     e_nomb: str
@@ -17,10 +18,10 @@ class EmisorCreate(BaseModel):
     e_telf: str
     e_mail: Optional[str] = None
 
+
 class EmisorUpdate(BaseModel):
     e_docu: Optional[str] = None
     e_nomb: Optional[str] = None
     e_apel: Optional[str] = None
     e_telf: Optional[str] = None
     e_mail: Optional[str] = None
-

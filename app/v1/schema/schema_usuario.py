@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
 
+
 class User(BaseModel):
 
     u_nombr: str
@@ -13,9 +14,6 @@ class User(BaseModel):
     u_tipo: str
     u_fechcrea: datetime = datetime.now()
     u_fechlogi: datetime = datetime.now()
-
-
-
 
     class User(BaseModel):
         id: int

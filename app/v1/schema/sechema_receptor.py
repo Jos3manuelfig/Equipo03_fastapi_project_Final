@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
 
+
 class ReceptorBase(BaseModel):
     r_docu: str
     r_nomb: str
@@ -14,8 +15,10 @@ class ReceptorBase(BaseModel):
     r_numcuen: str
     id_bancos: int
 
+
 class ReceptorCreate(ReceptorBase):
     pass
+
 
 class ReceptorUpdate(BaseModel):
     r_docu: Optional[str] = None
@@ -26,5 +29,3 @@ class ReceptorUpdate(BaseModel):
     r_tipcuen: Optional[str] = None
     r_numcuen: Optional[str] = None
     id_bancos: Optional[int] = None
-
-

@@ -5,6 +5,7 @@ from typing import Optional
 from datetime import datetime
 from decimal import Decimal
 
+
 class TransaccionBase(BaseModel):
     t_fecha: datetime
     t_monte: Decimal
@@ -17,8 +18,10 @@ class TransaccionBase(BaseModel):
     id_receptor: int
     id_pais: int
 
+
 class TransaccionCreate(TransaccionBase):
     pass
+
 
 class TransaccionUpdate(BaseModel):
     t_fecha: Optional[datetime] = None
@@ -31,4 +34,3 @@ class TransaccionUpdate(BaseModel):
     id_emisor: Optional[int] = None
     id_receptor: Optional[int] = None
     id_pais: Optional[int] = None
-
