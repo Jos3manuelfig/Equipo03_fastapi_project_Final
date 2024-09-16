@@ -9,7 +9,7 @@ app = FastAPI()
 
 @app.get("/")
 def bienvenida():
-    integrantes = ["Carlos Torres", "Jose Figuera", "Rafael Perez"]
+    integrantes = ["Carlos Torres A", "Jose Figuera", "Rafael Perez"]
     return {
         "mensaje": "Bienvenido al proyecto Final FastApi",
         "integrantes": integrantes,
