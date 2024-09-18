@@ -27,4 +27,6 @@ def read_root():
     }
 
 
+print("Push de prueba")
+
 
