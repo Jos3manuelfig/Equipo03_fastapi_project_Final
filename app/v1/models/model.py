@@ -90,6 +90,6 @@ class Usuarios(Base):
     u_fechlogi = Column(DateTime, nullable=False, default=datetime.utcnow)
 
 
-DATABASE_URL = "postgresql://postgres:root123@localhost:5432/remesas"
+DATABASE_URL = "postgresql://postgres:1234@localhost:5432/remesas"
 engine = create_engine(DATABASE_URL)
 Base.metadata.create_all(bind=engine)
